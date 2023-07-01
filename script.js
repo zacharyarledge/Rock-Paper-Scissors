@@ -29,16 +29,64 @@ function playRound() {
 
 function game() {
     let game1 = playRound();
+    console.log(game1)
+
+    if (game1 == "WIN") {
+        var playerScore = 1;
+        var computerScore = 0;
+        } else if (game1 == "LOSE") {
+        var computerScore = 1;
+        var playerScore = 0;
+        } else {
+            var playerScore = 0;
+            var computerScore = 0;
+        }
+   
     let game2 = playRound();
+    console.log(game2)
+
+    if (game2 == "WIN") {
+    playerScore += 1;
+    } else if (game2 == "LOSE") {
+    computerScore += 1;
+    } else {
+    console.log("What a great game!")
+    }
+    
     let game3 = playRound();
+    console.log(game3)
+
+    if (game3 == "WIN") {
+        playerScore += 1;
+    } else if (game3 == "LOSE") {
+        computerScore += 1;
+    } else {
+    console.log("What a great game!")
+    }
+    
     let game4 = playRound();
+    console.log(game4)
+
+    if (game4 == "WIN") {
+        playerScore += 1;
+    } else if (game4 == "LOSE") {
+        computerScore += 1;
+    } else {
+    console.log("What a great game!")
+    }
+
     let game5 = playRound();
-    return console.log(game1, game2, game3, game4, game5)
+    console.log(game5)
+    if (game5 == "WIN") {
+        playerScore += 1;
+    } else if (game5 == "LOSE") {
+        computerScore += 1;
+    } else {
+    console.log("What a great game!")
+    }  
+
+    console.log(playerScore + "-" + computerScore)
 }
-
-
-
-
 
 game()
 
